@@ -1,0 +1,44 @@
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Products")
+
+public class Product implements Serializable {
+
+	   private int Product_Id;
+	   private String Product_Name ;
+	   private int Category_ID;
+	   private int Sub_cat_ID;
+	   private String Category_name;
+	   private String Sub_Category_Name;
+
+    public Product() { }
+
+    public Product(int Product_Id, String Product_Name, int Category_ID ) {
+        this.Product_Id = Product_Id;
+        this.Product_Name = Product_Name;
+        this.Category_ID = Category_ID
+    }
+
+    @Id
+    public String getBookId() {
+        return this.bookId;
+    }
+
+    public String getTitle() {
+        return this.title;
+    }
+    ...
+
+    public void setBookId(String id) {
+        this.bookId=id;
+    }
+
+    public void setTitle(String title) {
+        this.title=title;
+    }
+    ...
+}

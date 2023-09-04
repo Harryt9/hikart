@@ -1,0 +1,44 @@
+package com.hikart.entity;
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Products")
+
+public class Product implements Serializable {
+
+	   private int Product_Id;
+	   private String Product_Name ;
+	   private int Category_ID;
+	   private int Sub_cat_ID;
+	   private String Category_name;
+	   private String Sub_Category_Name;
+
+    public Product() { }
+
+    public Product(int Product_Id, String Product_Name, int Category_ID ) {
+        this.Product_Id = Product_Id;
+        this.Product_Name = Product_Name;
+        this.Category_ID = Category_ID;
+    }
+
+    @Id
+    public int getProduct_Id() {
+        return this.Product_Id;
+    }
+
+    public String Product_Name() {
+        return this.Product_Name;
+    }
+
+
+    public void setProduct_Id(int id) {
+        this.Product_Id=Product_Id;
+    }
+
+    public void setProduct_Name(String Product_Name) {
+        this.Product_Name=Product_Name;
+    }
+}

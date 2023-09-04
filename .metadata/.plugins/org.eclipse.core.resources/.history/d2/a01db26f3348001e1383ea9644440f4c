@@ -1,0 +1,47 @@
+package com.hikart.model;
+
+public class ProductsData {
+	   private int Product_Id;
+	   private String Product_Name ;
+	   private int Category_ID;
+	   private int Sub_cat_ID;
+	   private String Category_name;
+	   private String Sub_Category_Name;
+	public String getProduct_Name() {
+		return Product_Name;
+	}
+	public void setProduct_Name(String product_Name) {
+		Product_Name = product_Name;
+	}
+	public int getProduct_Id() {
+		return Product_Id;
+	}
+	public void setProduct_Id(int product_Id) {
+		Product_Id = product_Id;
+	}
+	public int getCategory_ID() {
+		return Category_ID;
+	}
+	public void setCategory_ID(int category_ID) {
+		Category_ID = category_ID;
+	}
+	public int getSub_cat_ID() {
+		return Sub_cat_ID;
+	}
+	public void setSub_cat_ID(int sub_cat_ID) {
+		Sub_cat_ID = sub_cat_ID;
+	}
+	public String getCategory_name() {
+		return Category_name;
+	}
+	public void setCategory_name(String category_name) {
+		Category_name = category_name;
+	}
+	public String getSub_Category_Name() {
+		return Sub_Category_Name;
+	}
+	public void setSub_Category_Name(String sub_Category_Name) {
+		Sub_Category_Name = sub_Category_Name;
+	}
+	   
+}

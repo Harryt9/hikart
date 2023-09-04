@@ -1,0 +1,5 @@
+package com.hikart.DTO;
+
+public class ProductDTO {
+
+}

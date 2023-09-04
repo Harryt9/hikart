@@ -1,0 +1,14 @@
+package com.hikart.DTO;
+
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+
+import com.hikart.entity.Categories;
+
+public class ProductDTO {
+	   
+	private int productId;
+	private String productName;
+	private Categories category;
+
+}
